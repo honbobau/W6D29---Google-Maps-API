@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="application.css">
+    <title>Restaurant Markers</title>
+  </head>
+
+  <body>
+    <!-- display map -->
+    <div id="floating-panel">
+      Hawksworth Restaurant<input type="checkbox" id="hawksworth" checked></br>
+      Blue Water Cafe<input type="checkbox" id="bluewatercafe" checked></br>
+      La Quercia<input type="checkbox" id="laquercia" checked></br>
+      Cioppino's<input type="checkbox" id="cioppinos" checked></br>
+      The Pear Tree<input type="checkbox" id="thepeartree" checked></br>
+      Le Crocodile<input type="checkbox" id="lecrocodile" checked></br>
+      Zest<input type="checkbox" id="zest" checked></br>
+      Chef Ton Seafood<input type="checkbox" id="cheftonyseafood" checked></br>
+    </div>
+    <div id="map"></div>
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="latlng.js"></script>
+    <script srC="dom_listeners.js"></script>
+    <script src="map_init.js"></script>
+    <script src="info_window_text.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFthrDZYGjOacbDtBwZIvbRMhxRn4qc0g&callback=initMap">
+    </script>
+  </body>
+
+</html>
