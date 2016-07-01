@@ -5,22 +5,6 @@ function initMap() {
     center: vancouverLatlng
   });
 
-  // // DOM listeners
-  // let openMarker
-  // var mapDiv = document.getElementById('map');
-
-  // function closeOpenMarkers() {
-  //   if (openMarker) {
-  //     openMarker.close()
-  //   }
-  // }
-
-  // function mapcloseOpenMarkers() {
-  //   google.maps.event.addDomListener(mapDiv, 'click', function() {
-  //     closeOpenMarkers()
-  //   });
-  // };
-
   // info windows 
   function infowindowTemplate(title, text, link) {
     return '<div id="content">' +
@@ -162,8 +146,5 @@ function initMap() {
     cheftonyseafoodInfo.open(map, cheftonyseafoodMarker)
     openMarker = cheftonyseafoodInfo;
   });
-
-  
-
    
 }

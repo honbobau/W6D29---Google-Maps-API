@@ -2,6 +2,7 @@
 let openMarker
 var mapDiv = document.getElementById('map');
 
+// closes markers
 function closeOpenMarkers() {
   if (openMarker) {
     openMarker.close()
@@ -13,3 +14,8 @@ function mapcloseOpenMarkers() {
     closeOpenMarkers()
   });
 };
+
+// handles checkboxes
+if ($('#hawksworth').prop('checked') === false) {
+  hawksworthMarker.close()
+}
